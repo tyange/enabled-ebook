@@ -7,9 +7,11 @@ type LayoutProps = {
 
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div>
+    <div className="flex w-full h-screen flex-col">
       <Header />
-      <main>{children}</main>
+      <main className="flex-1 flex justify-center items-center">
+        {children}
+      </main>
     </div>
   );
 };
